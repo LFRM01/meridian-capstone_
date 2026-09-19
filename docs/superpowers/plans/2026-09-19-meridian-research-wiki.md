@@ -1,5 +1,12 @@
 # Meridian Research Wiki Implementation Plan
 
+**Status:** Complete. All 7 tasks implemented and individually reviewed
+clean (Task 5 needed one fix round for a math error, caught by its task
+review). A final whole-branch review found 2 Important findings, fixed
+in one follow-up commit and re-reviewed clean. See "Post-Plan Human
+Review Log" below for review notes on content added after the plan's
+tasks finished, via the wiki's own Ingest/Query workflow.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build the initial version of the Meridian research wiki — folder structure, schema doc, and a first ingest pass over `raw/client-brief.md` plus light web research — producing a prioritized interview-questions page for the Dana Okafor stakeholder interview.
@@ -29,7 +36,7 @@
 **Interfaces:**
 - Produces: the folder layout and conventions every later task writes into. No later task can start until this one is committed.
 
-- [ ] **Step 1: Write `CLAUDE.md`**
+- [x] **Step 1: Write `CLAUDE.md`**
 
 ```markdown
 # Meridian Capstone — Repo Conventions
@@ -88,12 +95,12 @@ after the real data extract arrives. This extends
 wiki itself as a destination.
 ```
 
-- [ ] **Step 2: Verify the file exists and reads correctly**
+- [x] **Step 2: Verify the file exists and reads correctly**
 
 Run: `cat CLAUDE.md | head -5`
 Expected: shows the `# Meridian Capstone — Repo Conventions` heading.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add CLAUDE.md
@@ -114,7 +121,7 @@ git commit -m "Add repo conventions and wiki schema doc"
 - Consumes: `raw/client-brief.md` (read-only source)
 - Produces: business-facts page other pages and `interview-questions.md` (Task 6) link to and pull **Open questions** from.
 
-- [ ] **Step 1: Write the page**
+- [x] **Step 1: Write the page**
 
 ```markdown
 # Meridian Markets
@@ -168,12 +175,12 @@ Specialty grocery chain, the client for this capstone engagement.
 Source: raw/client-brief.md
 ```
 
-- [ ] **Step 2: Verify required sections are present**
+- [x] **Step 2: Verify required sections are present**
 
 Run: `grep -c "^## " wiki/company/meridian-markets.md`
 Expected: `6` (Footprint & scale, Growth history, Competitive positioning, Stated business goals, Loyalty program, Open questions).
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add wiki/company/meridian-markets.md
@@ -195,7 +202,7 @@ git commit -m "Add Meridian Markets company facts page"
 - Consumes: `raw/client-brief.md`
 - Produces: two stakeholder pages `interview-questions.md` (Task 6) pulls from.
 
-- [ ] **Step 1: Write `wiki/stakeholders/dana-okafor.md`**
+- [x] **Step 1: Write `wiki/stakeholders/dana-okafor.md`**
 
 ```markdown
 # Dana Okafor
@@ -247,7 +254,7 @@ engagement.
 Source: raw/client-brief.md
 ```
 
-- [ ] **Step 2: Write `wiki/stakeholders/marcus.md`**
+- [x] **Step 2: Write `wiki/stakeholders/marcus.md`**
 
 ```markdown
 # Marcus
@@ -278,12 +285,12 @@ reach once the NDA is signed, to pull the data extract.
 Source: raw/client-brief.md
 ```
 
-- [ ] **Step 3: Verify both pages have required sections**
+- [x] **Step 3: Verify both pages have required sections**
 
 Run: `grep -l "^## Open questions" wiki/stakeholders/*.md | wc -l`
 Expected: `2`
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add wiki/stakeholders/dana-okafor.md wiki/stakeholders/marcus.md
@@ -304,7 +311,7 @@ git commit -m "Add stakeholder pages for Dana Okafor and Marcus"
 - Consumes: `raw/client-brief.md`, `DATA_HANDLING_CHECKLIST.md`
 - Produces: data-landscape page `interview-questions.md` (Task 6) pulls from.
 
-- [ ] **Step 1: Write the page**
+- [x] **Step 1: Write the page**
 
 ```markdown
 # Data Landscape
@@ -358,12 +365,12 @@ how each may be used per [DATA_HANDLING_CHECKLIST.md](../../DATA_HANDLING_CHECKL
 Source: raw/client-brief.md, DATA_HANDLING_CHECKLIST.md
 ```
 
-- [ ] **Step 2: Verify all four datasets are covered**
+- [x] **Step 2: Verify all four datasets are covered**
 
 Run: `grep -cE "^## (POS transactions|Loyalty program|Labor scheduling|Store attributes)" wiki/data/data-landscape.md`
 Expected: `4`
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add wiki/data/data-landscape.md
@@ -384,14 +391,14 @@ git commit -m "Add data landscape page"
 - Consumes: web search results (external, not a repo file)
 - Produces: market-research page `interview-questions.md` (Task 6) pulls from.
 
-- [ ] **Step 1: Run these searches** (light pass — 3 to 5 queries, per the approved research-depth decision)
+- [x] **Step 1: Run these searches** (light pass — 3 to 5 queries, per the approved research-depth decision)
 
 1. `specialty grocery industry trends 2026`
 2. `Los Angeles Orange Ventura county grocery market competition`
 3. `national grocery chains closing stores neighborhoods California`
 4. (optional, if 1–3 leave a gap) `specialty grocery prepared foods local sourcing strategy`
 
-- [ ] **Step 2: Write the page**, using this template — fill each `##` section with 2-4 bullet points drawn from the search results, each bullet ending in a markdown link to its source:
+- [x] **Step 2: Write the page**, using this template — fill each `##` section with 2-4 bullet points drawn from the search results, each bullet ending in a markdown link to its source:
 
 ```markdown
 # Market Research
@@ -423,16 +430,16 @@ in market context Dana didn't hand us.
 Source: web research, links inline above
 ```
 
-- [ ] **Step 3: Verify the page has real content, not template placeholders**
+- [x] **Step 3: Verify the page has real content, not template placeholders**
 
 Run: `grep -c "finding [0-9], with source" wiki/market/market-research.md`
 Expected: `0` (i.e. none of the literal template placeholders remain — all replaced with real bullets)
 
-- [ ] **Step 4: Append a note to log.md flagging deeper research as future work**
+- [x] **Step 4: Append a note to log.md flagging deeper research as future work**
 
 This gets added in Task 7's `log.md` entry (see Task 7, Step 2) — no separate file write here.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add wiki/market/market-research.md
@@ -453,7 +460,7 @@ git commit -m "Add market research page from light web-research pass"
 - Consumes: the **Open questions** sections of every page from Tasks 2–5.
 - Produces: the primary interview-prep deliverable.
 
-- [ ] **Step 1: Write the page**, grouping the Open Questions already drafted in Tasks 2–4 verbatim by topic, then adding a fourth group pulled from Task 5's actual Open questions section once it exists:
+- [x] **Step 1: Write the page**, grouping the Open Questions already drafted in Tasks 2–4 verbatim by topic, then adding a fourth group pulled from Task 5's actual Open questions section once it exists:
 
 ```markdown
 # Interview Questions — Dana Okafor
@@ -503,14 +510,14 @@ Task 5's wiki/market/market-research.md verbatim, numbered continuing
 from 14, each linking back to market/market-research.md. -->
 ```
 
-- [ ] **Step 2: Replace the market section placeholder** with the actual Open Questions from `wiki/market/market-research.md` (written in Task 5), continuing the numbering, each linking to `market/market-research.md`. Remove the HTML comment once filled.
+- [x] **Step 2: Replace the market section placeholder** with the actual Open Questions from `wiki/market/market-research.md` (written in Task 5), continuing the numbering, each linking to `market/market-research.md`. Remove the HTML comment once filled.
 
-- [ ] **Step 3: Verify no placeholder comment remains and all four groups are populated**
+- [x] **Step 3: Verify no placeholder comment remains and all four groups are populated**
 
 Run: `grep -c "<!-- Fill during execution" wiki/interview-questions.md`
 Expected: `0`
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add wiki/interview-questions.md
@@ -532,7 +539,7 @@ git commit -m "Add synthesized interview questions page"
 - Consumes: the file list of everything created in Tasks 1–6.
 - Produces: nothing further consumes these — this is the terminal task.
 
-- [ ] **Step 1: Write `wiki/index.md`**
+- [x] **Step 1: Write `wiki/index.md`**
 
 ```markdown
 # Wiki Index
@@ -561,7 +568,7 @@ Catalog of every page in this wiki, by category.
 - [Marcus](stakeholders/marcus.md) — IT, data extract contact
 ```
 
-- [ ] **Step 2: Write `wiki/log.md`**
+- [x] **Step 2: Write `wiki/log.md`**
 
 ```markdown
 # Ingest / Query / Lint Log
@@ -586,7 +593,7 @@ Append-only. One entry per ingest, query, or lint action.
   more sources) is future work, not done here.
 ```
 
-- [ ] **Step 3: Run full verification checklist from the spec**
+- [x] **Step 3: Run full verification checklist from the spec**
 
 Run each check and confirm:
 
@@ -609,7 +616,7 @@ git status --porcelain
 # Expected: only the files this plan created, nothing under raw/ with a data extension
 ```
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add wiki/index.md wiki/log.md
@@ -626,3 +633,47 @@ git commit -m "Add wiki index and initial ingest log entry"
 - **Spec coverage:** every page in the spec's "Page specifications" section has a task (Tasks 2-7). The `CLAUDE.md` schema contents from the spec are fully reproduced in Task 1. The data-sensitivity rule appears in both `CLAUDE.md` (Task 1) and is cited in `data-landscape.md` (Task 4) — no gap.
 - **Placeholder scan:** Task 5 and Task 6 contain template markers (`[finding N, with source]`, the HTML comment) by necessity, since their real content depends on live web-research results not available at plan-writing time — each is paired with an explicit verification step (grep for zero remaining placeholders) so the task cannot be marked done with a placeholder left in place. This is the plan's one deliberate deviation from "no placeholders," scoped narrowly to content that depends on runtime research.
 - **Type/reference consistency:** all relative links between pages (e.g. `../stakeholders/dana-okafor.md` from `data-landscape.md`) checked against the actual folder structure in Task 1.
+
+## Post-Plan Human Review Log
+
+This plan's 7 tasks are complete (see git history from `d6d9f33..093898b`).
+The entries below are human spot-checks of content added afterward via the
+wiki's own Ingest workflow (`CLAUDE.md`), not part of the original task
+list — logged here since that's where review notes for this line of work
+have been tracked throughout.
+
+### 2026-09-19 — JLL Grocery Tracker ingest (`wiki/market/market-research.md`)
+
+- **What was asked:** verify the specialty-grocer claims added from the
+  JLL Grocery Tracker report — specifically Sprouts' and Trader Joe's
+  2024 store-count/square-footage expansion figures and Trader Joe's
+  foot-traffic growth figure.
+- **How it was checked:** compared the figures as written in
+  `wiki/market/market-research.md`'s "Specialty grocery industry trends"
+  section against the source article
+  (https://www.jll.com/en-us/insights/market-perspectives/grocery-tracker).
+- **Outcome:** all figures matched exactly. Accepted as-is, no changes
+  requested.
+
+### 2026-09-19 — Rancho Cucamonga geography fix (`wiki/market/market-research.md`)
+
+- **What the final review flagged:** Minor finding #7 from the final
+  whole-branch review (agent a1f04abd4a690907e): the sentence "Specialty
+  chains are actively expanding into Meridian's counties" listed Rancho
+  Cucamonga among the Sprouts in-store-cafe locations, but Rancho
+  Cucamonga is in San Bernardino County — outside Meridian's stated
+  LA/Orange/Ventura footprint. Huntington Beach, Glendale, La Verne,
+  Diamond Bar, and West Covina all checked out as genuinely inside the
+  footprint; Rancho Cucamonga was the one exception.
+- **Why it was deferred:** the final reviewer explicitly recommended
+  treating this (and several other Minors) as backlog rather than a
+  merge-blocker, so it was left unfixed and only recorded as a ruling in
+  this plan's now-deleted SDD workspace ledger
+  (`.superpowers/sdd/2026-09-19-meridian-research-wiki/progress.md`),
+  which meant the deferral itself had no durable record once that
+  workspace was cleaned up post-merge.
+- **Resolution:** now fixed before submission. The bullet was reworded
+  to keep Rancho Cucamonga (rather than drop it) but explicitly qualify
+  it as "just outside Meridian's three-county footprint (San Bernardino
+  County)" — preserving the factual detail while correcting the
+  geographic claim.

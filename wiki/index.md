@@ -17,6 +17,7 @@ Catalog of every page in this wiki, by category.
 ## Market
 
 - [Market Research](market/market-research.md) — outside research on the specialty grocery industry and LA/OC/Ventura market
+- [Where Specialty Grocers Are Opening](market/specialty-grocer-openings.md) — query answer on specialty-grocer expansion locations, with citations
 
 ## Stakeholders
 

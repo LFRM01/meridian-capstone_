@@ -1,7 +1,7 @@
 # Meridian Research Wiki — Design Spec
 
 Date: 2026-09-19
-Status: Approved design, pending spec review
+Status: Implemented. See `docs/superpowers/plans/2026-09-19-meridian-research-wiki.md` for the implementation plan and completion status.
 
 ## Purpose
 
