@@ -22,3 +22,7 @@ Catalog of every page in this wiki, by category.
 
 - [Dana Okafor](stakeholders/dana-okafor.md) — VP Operations, primary contact
 - [Marcus](stakeholders/marcus.md) — IT, data extract contact
+
+## Meta
+
+- [Log](log.md) — append-only ingest/query/lint record

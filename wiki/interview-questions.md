@@ -4,6 +4,8 @@ Prioritized questions for the stakeholder interview, synthesized from
 open questions across the wiki. Each question links back to the page it
 came from.
 
+If time is short, prioritize: 19, 1, 2, 5, 6, 12.
+
 ## Business & strategy
 
 1. What specifically makes Pasadena "the obvious next step" — informal
@@ -40,20 +42,28 @@ came from.
 
 ## Market
 
-15. Which specific national-chain closures in LA/Orange/Ventura (if any of
-    the ones above, or others) correspond to the actual leases Meridian
-    took over in its 6→14 store growth — worth asking Dana for the
-    store-by-store history. ([market](market/market-research.md))
+15. Which specific national-chain closures in LA/Orange/Ventura (the
+    closures noted in [market research](market/market-research.md), or
+    others) correspond to the actual leases Meridian took over in its
+    6→14 store growth — worth asking Dana for the store-by-store
+    history. ([market](market/market-research.md))
 16. Given Albertsons and Kroger still hold roughly a quarter to just under
     a third (25–29%) combined share in each county, how does Meridian
-    define its real competitive set: the
-    majors, the exiting mid-tier chains, or the expanding specialty
-    players (Sprouts, Trader Joe's, ethnic grocers)? ([market](market/market-research.md))
+    define its real competitive set: the majors, the exiting mid-tier
+    chains, or the expanding specialty players (Sprouts, Trader Joe's,
+    ethnic grocers)? ([market](market/market-research.md))
 17. Are any of the specialty chains actively expanding in the region
     (Sprouts, Trader Joe's) opening locations near Meridian's existing 14
     stores, and if so, is that already showing up in foot traffic or
     sales data? ([market](market/market-research.md))
-18. The prepared-foods/local-sourcing differentiation data above comes
-    from a 2022 industry survey — is more current (2025/2026) data
-    available, and does Meridian have any way to benchmark its own
-    prepared-foods mix against industry norms? ([market](market/market-research.md))
+18. Our benchmark for prepared-foods/local-sourcing differentiation comes
+    from a 2022 FMI survey (see [market research](market/market-research.md))
+    — is more current (2025/2026) data available, and does Meridian have
+    any way to benchmark its own prepared-foods mix against industry
+    norms? ([market](market/market-research.md))
+
+## Timeline
+
+19. What does the board specifically need to see at the 3-week
+    checkpoint, and does the Pasadena decision have to be in it?
+    ([Dana](stakeholders/dana-okafor.md))

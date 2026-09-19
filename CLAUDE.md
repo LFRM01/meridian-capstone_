@@ -28,6 +28,7 @@ wiki/
 
 - Plain markdown, relative links (e.g. `[Dana Okafor](../stakeholders/dana-okafor.md)`) — never `[[wikilink]]` syntax.
 - Every content page opens with a one-sentence purpose line, uses `##` headings, ends with an **Open questions** subsection and a **Source(s)** line.
+- "Content page" means anything under `company/`, `data/`, `market/`, or `stakeholders/`; `index.md`, `log.md`, and `interview-questions.md` are structural/synthesis pages and are exempt from the Open questions/Source requirement above.
 
 ## Workflows
 

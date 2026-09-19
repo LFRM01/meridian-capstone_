@@ -18,3 +18,11 @@ Append-only. One entry per ingest, query, or lint action.
   `docs/superpowers/plans/2026-09-19-meridian-research-wiki.md`). A
   deeper research pass (dedicated research agent, competitor profiles,
   more sources) is future work, not done here.
+
+## 2026-09-19 — Timeline fact added from client brief (final review fix)
+
+- Source: `raw/client-brief.md` (Timeline section, previously missed)
+- Pages touched: `stakeholders/dana-okafor.md`, `interview-questions.md`
+- Key takeaway: added the 8-week engagement / 3-week board-preliminary
+  deadline, which was surfaced as a gap by the final whole-branch
+  review.

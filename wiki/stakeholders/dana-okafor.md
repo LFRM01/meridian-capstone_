@@ -22,6 +22,12 @@ engagement.
 - Her assistant can schedule meetings but cannot answer analytics
   questions — route substantive questions to Dana directly.
 
+## Timeline & deliverables
+
+- The brief puts the engagement at roughly eight weeks total.
+- Dana wants something to show the board when it meets in about three
+  weeks — even if preliminary.
+
 ## Context from the brief
 
 - Wrote the brief "between flights" and flagged it might be rough —

@@ -63,9 +63,9 @@ in market context Dana didn't hand us.
   store-by-store history.
 - Given Albertsons and Kroger still hold roughly a quarter to just under
   a third (25–29%) combined share in each county, how does Meridian
-  define its real competitive set: the
-  majors, the exiting mid-tier chains, or the expanding specialty
-  players (Sprouts, Trader Joe's, ethnic grocers)?
+  define its real competitive set: the majors, the exiting mid-tier
+  chains, or the expanding specialty players (Sprouts, Trader Joe's,
+  ethnic grocers)?
 - Are any of the specialty chains actively expanding in the region
   (Sprouts, Trader Joe's) opening locations near Meridian's existing 14
   stores, and if so, is that already showing up in foot traffic or
