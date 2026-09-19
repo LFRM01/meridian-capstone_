@@ -1,0 +1,14 @@
+# Raw client data extract — never commit actual data files.
+# Docs like raw/client-brief.md are fine to track; only data files are excluded.
+raw/*.csv
+raw/*.tsv
+raw/*.xlsx
+raw/*.xls
+raw/*.parquet
+raw/*.json
+raw/*.db
+raw/*.sqlite
+raw/*.zip
+
+# Aggregated/derived outputs — regenerate from raw data, don't commit by default.
+processed/
