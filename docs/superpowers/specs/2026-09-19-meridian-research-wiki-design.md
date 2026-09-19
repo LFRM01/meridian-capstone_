@@ -13,6 +13,17 @@ questions for the upcoming stakeholder interview with Dana Okafor; the wiki
 is built to keep growing as a general research base across the full 8-week
 engagement.
 
+## Scope
+
+In scope for this spec: the wiki's folder structure, page conventions and
+templates, the `CLAUDE.md` schema/workflow doc, and one initial ingest pass
+(client-brief.md + targeted web research) producing every page listed
+below, including the `interview-questions.md` synthesis.
+
+Out of scope is listed in full further down, but the short version: no
+Obsidian setup, no per-dataset page splitting yet, no formal `/ingest`
+command, and no ingestion of the real (not-yet-received) data extract.
+
 ## Architecture
 
 Three layers, per the LLM wiki pattern:
