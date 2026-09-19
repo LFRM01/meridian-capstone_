@@ -61,8 +61,9 @@ in market context Dana didn't hand us.
   the ones above, or others) correspond to the actual leases Meridian
   took over in its 6→14 store growth — worth asking Dana for the
   store-by-store history.
-- Given Albertsons and Kroger still hold 30–40%+ combined share in each
-  county, how does Meridian define its real competitive set: the
+- Given Albertsons and Kroger still hold roughly a quarter to just under
+  a third (25–29%) combined share in each county, how does Meridian
+  define its real competitive set: the
   majors, the exiting mid-tier chains, or the expanding specialty
   players (Sprouts, Trader Joe's, ethnic grocers)?
 - Are any of the specialty chains actively expanding in the region
