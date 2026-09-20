@@ -655,6 +655,17 @@ have been tracked throughout.
 - **Outcome:** all figures matched exactly. Accepted as-is, no changes
   requested.
 
+### 2026-09-19 — "Where specialty grocers are opening" query answer (`wiki/market/specialty-grocer-openings.md`)
+
+- **What was asked:** the AI was asked to answer "where are specialty
+  grocers opening?" from the wiki's existing sources, with a citation
+  for each claim and any unsourced conclusion labeled as the AI's own —
+  then to file that answer back into the wiki as a page.
+- **How it was checked:** followed one of the filed answer's citations
+  back to its original source page to confirm the claim was represented
+  accurately.
+- **Outcome:** accepted the filed answer as-is; nothing incorrect found.
+
 ### 2026-09-19 — Rancho Cucamonga geography fix (`wiki/market/market-research.md`)
 
 - **What the final review flagged:** Minor finding #7 from the final
